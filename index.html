@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mutlu Yavuz | PostgreSQL DBA</title>
+  <meta name="description" content="PostgreSQL DBA • HA Cluster • ETL & Migration kişisel portföy sitesi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#hero">
+        <span class="brand-mark">MY</span>
+        <span class="brand-text">Mutlu Yavuz</span>
+      </a>
+      <nav>
+        <a href="#about">Hakkımda</a>
+        <a href="#services">Uzmanlık</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">PostgreSQL DBA • HA Cluster • ETL & Migration</span>
+          <h1>Modern, güvenilir ve izlenebilir <span>veritabanı sistemleri</span> kuruyorum.</h1>
+          <p>
+            PostgreSQL yönetimi, yüksek erişilebilirlik mimarileri, yedekleme, izleme,
+            performans iyileştirme ve ETL süreçlerinde uçtan uca çözümler geliştiriyorum.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Projeleri Gör</a>
+            <a class="btn btn-secondary" href="#contact">İletişime Geç</a>
+          </div>
+          <div class="hero-badges">
+            <span>Patroni</span>
+            <span>etcd</span>
+            <span>pgBackRest</span>
+            <span>Grafana</span>
+            <span>PostgreSQL</span>
+            <span>SQL Server</span>
+          </div>
+        </div>
+
+        <div class="hero-card glass">
+          <div class="hero-topline">
+            <span class="status-dot"></span>
+            <span>Sistem Durumu</span>
+          </div>
+          <div class="metric-grid">
+            <div class="metric-card">
+              <small>Cluster Health</small>
+              <strong>99.95%</strong>
+              <span>HA yapısı aktif</span>
+            </div>
+            <div class="metric-card">
+              <small>Replication</small>
+              <strong>&lt; 1 sn</strong>
+              <span>Gerçek zamanlı izleme</span>
+            </div>
+            <div class="metric-card">
+              <small>Backup</small>
+              <strong>pgBackRest</strong>
+              <span>Doğrulanmış yedekler</span>
+            </div>
+            <div class="metric-card">
+              <small>Monitoring</small>
+              <strong>24/7</strong>
+              <span>Grafana & exporter</span>
+            </div>
+          </div>
+          <div class="terminal-box">
+            <div class="terminal-head">
+              <span></span><span></span><span></span>
+            </div>
+            <code>
+              $ patronictl list<br>
+              Leader: pg-node-1<br>
+              Replica: pg-node-2<br>
+              Backup: OK<br>
+              WAL Archive: OK
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <span class="section-label">Hakkımda</span>
+          <h2>Kurumsal sistemlerde kararlı çalışan veritabanı altyapıları tasarlıyorum.</h2>
+        </div>
+        <div>
+          <p>
+            Veritabanı yönetimi, yüksek erişilebilirlik, performans analizi, veri taşıma ve raporlama
+            alanlarında çalışıyorum. Özellikle PostgreSQL odaklı mimarilerde üretim ortamına uygun,
+            izlenebilir ve sürdürülebilir çözümler oluşturmayı hedefliyorum.
+          </p>
+          <p>
+            Amacım yalnızca çalışan bir sistem kurmak değil; arıza anında toparlanabilen,
+            yedekleri test edilmiş, metrikleri görülebilen ve operasyon ekibine güven veren bir yapı kurmak.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Uzmanlık Alanları</span>
+          <h2>Odaklandığım başlıklar</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="info-card glass">
+            <h3>PostgreSQL Yönetimi</h3>
+            <p>Kurulum, yapılandırma, kullanıcı ve yetki yönetimi, performans izleme, bakım ve sürüm yükseltme planlaması.</p>
+          </article>
+          <article class="info-card glass">
+            <h3>HA Cluster</h3>
+            <p>Patroni, etcd, streaming replication, failover senaryoları ve operasyonel doğrulama süreçleri.</p>
+          </article>
+          <article class="info-card glass">
+            <h3>Yedekleme & Geri Dönüş</h3>
+            <p>pgBackRest ile tam, fark ve WAL tabanlı yedek stratejileri; geri dönüş testleri ve saklama politikaları.</p>
+          </article>
+          <article class="info-card glass">
+            <h3>İzleme & Alarm</h3>
+            <p>Grafana, exporter'lar, sistem metrikleri, connection takibi, replication izleme ve uyarı tasarımı.</p>
+          </article>
+          <article class="info-card glass">
+            <h3>ETL & Migration</h3>
+            <p>Veri taşıma, şema dönüşümü, PostgreSQL–SQL Server geçişleri ve kontrollü migrasyon akışları.</p>
+          </article>
+          <article class="info-card glass">
+            <h3>Raporlama & Dashboard</h3>
+            <p>Canlı KPI kartları, harita tabanlı ekranlar, tahsilat istatistikleri ve modern yönetim panelleri.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Öne Çıkan Projeler</span>
+          <h2>GitHub Pages ana sayfasında gösterebileceğin proje blokları</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card glass">
+            <div>
+              <span class="project-tag">HA / PostgreSQL</span>
+              <h3>3 Node PostgreSQL HA Mimarisi</h3>
+              <p>Patroni + etcd + pgBackRest + Grafana ile yüksek erişilebilirlik, yedekleme ve gözlemlenebilirlik odaklı yapı.</p>
+            </div>
+            <a href="#contact">Detay Ekle →</a>
+          </article>
+          <article class="project-card glass">
+            <div>
+              <span class="project-tag">Dashboard</span>
+              <h3>Belediye Otomasyon Kullanım Haritası</h3>
+              <p>Türkiye haritası üzerinde il, ilçe, belde ve birlik bazında kullanım gösteren KPI destekli yönetim ekranı.</p>
+            </div>
+            <a href="#contact">Detay Ekle →</a>
+          </article>
+          <article class="project-card glass">
+            <div>
+              <span class="project-tag">ETL / Migration</span>
+              <h3>Veri Taşıma ve Şema Dönüşüm Akışları</h3>
+              <p>Büyük hacimli veri geçişlerinde kontrollü insert akışları, doğrulama sorguları ve minimum kesinti yaklaşımı.</p>
+            </div>
+            <a href="#contact">Detay Ekle →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container cta glass">
+        <div>
+          <span class="section-label">Sonraki Adım</span>
+          <h2>Bu siteyi GitHub Pages üzerinde birkaç dakikada yayınlayabilirsin.</h2>
+          <p>Repo adı <strong>kullaniciadi.github.io</strong> olursa direkt ana kişisel siten olarak yayınlanır.</p>
+        </div>
+        <a class="btn btn-primary" href="#contact">Yayın Hazır</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Mutlu Yavuz</h3>
+        <p>PostgreSQL DBA • HA Cluster • ETL & Migration</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:ornek@mail.com">E-posta</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
